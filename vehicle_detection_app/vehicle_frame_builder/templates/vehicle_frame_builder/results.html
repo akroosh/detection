@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vehicle Plate Results</title>
+    <style>
+        .thumbnail {
+            width: 550px; /* Adjust the width of the thumbnail as needed */
+            height: auto;
+            margin: 5px;
+            float: left;
+        }
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vehicle Plate Results</h1>
+
+    {% if vehicles %}
+        <div class="thumbnails">
+            {% for vehicle in vehicles %}
+                <!-- Display the vehicle image -->
+                <div class="thumbnail">
+                    <img src="{{ vehicle.image.url }}" alt="Vehicle Image" width="550" height="auto">
+                </div>
+                {% if forloop.counter|divisibleby:3 %}
+                    <div class="row"></div> <!-- Start a new row after every third image -->
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>No vehicle plates found.</p>
+    {% endif %}
+</body>
+</html>
