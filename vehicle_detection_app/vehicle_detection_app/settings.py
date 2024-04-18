@@ -28,8 +28,8 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG")
-PLATE_DETECTION_MODEL = os.getenv("PLATE_DETECTION_MODEL")
-VEHICLE_DETECTION_MODEL = os.getenv("VEHICLE_DETECTION_MODEL")
+PLATE_DETECTION_MODEL = "license_plate_detector.pt"
+VEHICLE_DETECTION_MODEL = "yolov8x.pt"
 ALLOWED_EXTENSIONS = ["png", "jpg", "jpeg"]
 VEHICLE_RECOGNITION_CLASS = 2
 

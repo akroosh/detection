@@ -6,21 +6,20 @@ services:
     container_name: db
     image: postgres:16-alpine3.19
     env_file:
-      - ./.env
+      - .env
     volumes:
       - ./db_data:/var/lib/postgresql/data
     networks:
       - dev_network
     ports:
-      - "5432:5432"
+      - "6000:5432"
 
   api:
     container_name: detector
     build:
-      context: .
-      dockerfile: ./Dockerfile
+      dockerfile: Dockerfile
     env_file:
-      - ./.env
+      - .env
     volumes:
       - ./backend:/usr/src/backend
     depends_on:

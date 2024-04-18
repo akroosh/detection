@@ -15,5 +15,5 @@ RUN pip install -r app_requirements.txt
 
 
 # copy project
-COPY . .
+COPY vehicle_detection_app .
 

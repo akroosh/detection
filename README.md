@@ -13,7 +13,7 @@ Welcome to the Vehicle Tracker and License Plate Detection System! This project 
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/yourusername/vehicle-tracker.git
+    git clone https://github.com/akroosh/vehicle-tracker.git
     ```
 2. Create a virtual environment and activate it
     ```bash
@@ -26,23 +26,24 @@ Welcome to the Vehicle Tracker and License Plate Detection System! This project 
     pip install -r requirements/app_requirements.txt
     ```
 
-4. Apply the migrations:
+4. Add .env file inserting your variables, using .env.example file
+
+5. Apply the migrations:
 
     ```bash
-    python manage.py migrate
+    python vehicle_detection_app/manage.py migrate
     ```
-5. Change .env file inserting your variables
 
 6. Run the Django server:
 
     ```bash
-    python manage.py runserver
+    python vehicle_detection_app/manage.py runserver
     ```
 
 7. Open your web browser and navigate to `http://localhost:8000/upload/`.
 
 ## Docker installation
-1. Change .env file inserting your variables
+1. Add .env file inserting your variables, using .env.example file
 
 2. Build the image
     ```bash
@@ -52,7 +53,7 @@ Welcome to the Vehicle Tracker and License Plate Detection System! This project 
    ```bash
     docker-compose up -d
     ```
-3. Access your application on `http://0.0.0.0:8000`
+4. Access your application on `http://0.0.0.0:8000`
 
 ## Usage
 
