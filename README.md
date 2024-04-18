@@ -13,7 +13,7 @@ Welcome to the Vehicle Tracker and License Plate Detection System! This project 
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/akroosh/vehicle-tracker.git
+    git clone https://github.com/akroosh/detection.git
     ```
 2. Create a virtual environment and activate it
     ```bash
