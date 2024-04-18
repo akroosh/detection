@@ -31,9 +31,9 @@ DEBUG = os.getenv("DEBUG")
 PLATE_DETECTION_MODEL = os.getenv("PLATE_DETECTION_MODEL")
 VEHICLE_DETECTION_MODEL = os.getenv("VEHICLE_DETECTION_MODEL")
 ALLOWED_EXTENSIONS = ["png", "jpg", "jpeg"]
-CLASS = 2
+VEHICLE_RECOGNITION_CLASS = 2
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS").split(" ")
 
 # Application definition
 

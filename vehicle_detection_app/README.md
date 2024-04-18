@@ -8,7 +8,7 @@ Welcome to the Vehicle Tracker and License Plate Detection System! This project 
 - **License Plate Detection**: The model also identifies license plates on the detected vehicles.
 - **View Results**: After processing the image, you can view the tracked vehicles and their license plates.
 
-## Installation
+## Local installation
 
 1. Clone the repository to your local machine:
 
@@ -23,7 +23,7 @@ Welcome to the Vehicle Tracker and License Plate Detection System! This project 
 3. Install the required dependencies:
 
     ```bash
-    pip install -r requirements.txt
+    pip install -r requirements/app_requirements.txt
     ```
 
 4. Apply the migrations:
@@ -41,11 +41,24 @@ Welcome to the Vehicle Tracker and License Plate Detection System! This project 
 
 7. Open your web browser and navigate to `http://localhost:8000/upload/`.
 
+## Docker installation
+1. Change .env file inserting your variables
+
+2. Build the image
+    ```bash
+    docker-compose build
+    ```
+3. Run the system
+   ```bash
+    docker-compose up -d
+    ```
+3. Access your application on `http://0.0.0.0:8000`
+
 ## Usage
 
-1. Access the upload page by visiting `http://localhost:8000/upload/` in your web browser.
+1. Access the upload page by visiting `http://localhost:8000/upload/` or `http://0.0.0.0:8000/upload`  in your web browser.
 2. Choose an image file containing vehicles and click the "Upload" button.
 3. Wait for the image to be processed. Once done, you will see the tracked vehicles and their associated license plates.
-4. Enjoy exploring the results by visitins `http://localhost:8000/results/`
+4. Enjoy exploring the results by visitins `http://localhost:8000/results/` or `http://0.0.0.0:8000/results`
 
 

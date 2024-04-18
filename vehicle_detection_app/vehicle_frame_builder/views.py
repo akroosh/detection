@@ -28,7 +28,7 @@ def upload_and_process_image(request):
             name="vehicles",
             exist_ok=True,
             persist=True,
-            classes=settings.CLASS,
+            classes=settings.VEHICLE_RECOGNITION_CLASS,
         )
         if vehicle_results[0].boxes.xyxy.numel() == 0:
             os.remove(temp_image_path)
