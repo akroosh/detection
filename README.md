@@ -31,16 +31,20 @@ Welcome to the Vehicle Tracker and License Plate Detection System! This project 
 5. Apply the migrations:
 
     ```bash
-    python vehicle_detection_app/manage.py migrate
+    cd vehicle_detection_app
+    python manage.py migrate
     ```
-
-6. Run the Django server:
+6. Create media folder
+    ```bash
+    mkdir media
+    ```
+7. Run the Django server:
 
     ```bash
-    python vehicle_detection_app/manage.py runserver
+    python manage.py runserver
     ```
 
-7. Open your web browser and navigate to `http://localhost:8000/upload/`.
+8. Open your web browser and navigate to `http://localhost:8000/upload/`.
 
 ## Docker installation
 1. Add .env file inserting your variables, using .env.example file
