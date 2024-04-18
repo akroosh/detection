@@ -15,27 +15,31 @@ Welcome to the Vehicle Tracker and License Plate Detection System! This project 
     ```bash
     git clone https://github.com/yourusername/vehicle-tracker.git
     ```
-
-2. Install the required dependencies:
+2. Create a virtual environment and activate it
+    ```bash
+    virtualenv venv
+   . venv/bin/activate
+    ```
+3. Install the required dependencies:
 
     ```bash
     pip install -r requirements.txt
     ```
 
-3. Apply the migrations:
+4. Apply the migrations:
 
     ```bash
     python manage.py migrate
     ```
-4. Change .env file inserting your variables
+5. Change .env file inserting your variables
 
-5. Run the Django server:
+6. Run the Django server:
 
     ```bash
     python manage.py runserver
     ```
 
-6. Open your web browser and navigate to `http://localhost:8000/upload/`.
+7. Open your web browser and navigate to `http://localhost:8000/upload/`.
 
 ## Usage
 
