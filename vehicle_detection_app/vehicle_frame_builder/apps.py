@@ -2,5 +2,5 @@ from django.apps import AppConfig
 
 
 class VehicleFrameBuilderConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'vehicle_frame_builder'
+    default_auto_field = "django.db.models.BigAutoField"
+    name = "vehicle_frame_builder"
