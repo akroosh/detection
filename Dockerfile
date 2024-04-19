@@ -13,7 +13,8 @@ RUN pip install --upgrade pip
 COPY /requirements/app_requirements.txt .
 RUN pip install -r app_requirements.txt
 
-
+# create media folder
+RUN mkdir /usr/src/vehicle_detection_app/media
 # copy project
 COPY vehicle_detection_app .
 
