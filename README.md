@@ -55,15 +55,15 @@ Welcome to the Vehicle Tracker and License Plate Detection System! This project 
     ```
 3. Run the system
    ```bash
-    docker-compose up -d
+    docker-compose up
     ```
-4. Access your application on `http://0.0.0.0:8000`
+4. Access your application
 
 ## Usage
 
-1. Access the upload page by visiting `http://localhost:8000/upload/` or `http://0.0.0.0:8000/upload`  in your web browser.
+1. Access the upload page by visiting `http://localhost:8000/upload/` in your web browser.
 2. Choose an image file containing vehicles and click the "Upload" button.
 3. Wait for the image to be processed. Once done, you will see the tracked vehicles and their associated license plates.
-4. Enjoy exploring the results by visitins `http://localhost:8000/results/` or `http://0.0.0.0:8000/results`
+4. Enjoy exploring the results by visitins `http://localhost:8000/results/`
 
 
